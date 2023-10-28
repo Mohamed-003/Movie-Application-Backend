@@ -3,7 +3,6 @@ const router = express.Router();
 router.use(express.json());
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-// const { pool } = require("../config");
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 

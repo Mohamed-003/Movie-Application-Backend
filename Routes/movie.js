@@ -111,7 +111,7 @@ router.get(("/"), async (req, res, next) => {
             })
             res.status(200).json({ "movies": result.movieList })
         } else {
-            res.status(200).json({ "movies": { "movies": { "movie list": [] } } })
+            res.status(200).json({ "movies": [] })
         }
     } catch (error) {
         console.log("Error while retrieving data");

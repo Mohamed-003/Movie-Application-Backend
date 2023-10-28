@@ -84,6 +84,7 @@ Access the application in your web browser at http://localhost:3000.
 
 ### Installing PostgreSQL on Windows
 
+
 1. Download PostgreSQL: 
    - Visit the [EDB PostgreSQL download page](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
    - Choose the newest Windows version compatible with your operating system.
@@ -123,6 +124,18 @@ Access the application in your web browser at http://localhost:3000.
     - Once the installation is finished, you have successfully installed PostgreSQL on your Windows computer.
 
 ### Setup Prisma
+
+* update `` DATABASE_URL="postgresql://postgres:12345678@localhost:5432/movie?schema=movies" ``` in .env file
+based on this format  ``postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA``````
+
+* install all the modules in the backend using this command 'npm i'
+
+* then start the server using this command 'npm start'
+
+* for more details on creating your own prisma model from scratch please refer the below procedure
+
+
+The following is the standard procedure for using Prisma:
 
 1. Create a project directory and navigate into it:
 
